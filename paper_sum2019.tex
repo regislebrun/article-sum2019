@@ -1,0 +1,51 @@
+\documentclass[runningheads]{llncs}
+%
+\usepackage{graphicx}
+% If you use the hyperref package, please uncomment the following line
+% to display URLs in blue roman font according to Springer's eBook style:
+% \renewcommand\UrlFont{\color{blue}\rmfamily}
+
+\begin{document}
+%
+\title{Title\thanks{Supported by organization x.}}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{Marvin Lasserre\inst{1}\orcidID{0000-1111-2222-3333} \and
+Régis Lebrun\inst{2}\orcidID{0000-1111-2222-3333} \and
+Pierre-Henri Wuillemin\inst{1}\orcidID{0000-1111-2222-3333}}
+%
+\authorrunning{F. Author et al.}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{Laboratoire d'Informatique de Paris 6, 4 place Jussieu, Paris, France
+\email{lncs@lip6.com} \and
+ABC Institute, Rupert-Karls-University Heidelberg, Heidelberg, Germany\\
+\email{\{abc,lncs\}@uni-heidelberg.de}}
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+The abstract should briefly summarize the contents of the paper in
+150--250 words.
+
+\keywords{Copulas  \and Copula Bayesian Networks \and Learning.}
+\end{abstract}
+%
+%
+%
+\input{01_introduction}
+\input{02_copulas}
+\input{03_cbn}
+\input{04_learning}
+
+%
+% ---- Bibliography ----
+%
+\bibliographystyle{splncs04}
+\bibliography{bibliography_sum2019}
+%
+\end{document}

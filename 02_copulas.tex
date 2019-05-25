@@ -1,4 +1,32 @@
 \section{Copulas}
 
-Let $\chi = \left\{ X_i\right\}_{i}$
-A copula is a function from
+Throughout the remainder of this article, we will denote by $\overline{\bbbr}$ the extended set
+of real numbers defined as $ \overline{\bbbr} = \bbbr \cup \left\{-\infty, +\infty\right\}$.
+Let $\chi = \left\{ X_1, \dots, X_n\right\}$ be a set of $n$ continuous random variables and
+$H(X_1, \dots, X_n) = \bbbp\left(X_1\leq x_1, \dots, X_n \leq x_n \right)$ a cumulative 
+distributive function (CDF) over $\chi$. We denote by lower case $x_i$ a realization of a random
+ variable. Recall that a CDF respects the following properties:
+\begin{enumerate}
+	\item For every $\mathbf{x} \in \mathbf{I}^n$,
+	\begin{equation}
+		H(\mathbf{x}) = 0 %\textrm{ if at least one of the } x_i
+		                  %\textrm{ is equal to a_i.} 
+	\end{equation}
+\end{enumerate}
+An n-dimensional copula is then a function $C$ from the n-dimensional unit cube
+$\mathbf{I}^n = [0, 1]^n$ to $[0, 1]$ which respects the two following properties:
+\begin{enumerate}
+	\item The function C is grounded and n-increasing.
+\end{enumerate} 
+A copula function may also be seen as a distribution function and is consequently of main interest
+to draw sample from a known distribution law using Monte-Carlo methdods.
+Moreover, copulas being distributions, we can define a copula density function
+
+\begin{theorem}[Sklar 1959]
+	Let $H(x_1, \dots, x_n)$ be any multivariate distribution over continuous random variables,
+	there exists a copula function such that
+	\begin{equation}
+		H \left( x_1, \dots, x_n \right) = C \left( F(x_1), \dots, F(x_n) \right).
+	\end{equation}
+	Furthermore, if each $F(x_i)$ is continuous then $C$ is unique.
+\end{theorem}
